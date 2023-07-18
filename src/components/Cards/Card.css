@@ -1,0 +1,100 @@
+.flex-container {
+  display: flex;
+  width: 31.5%;
+  margin: 1% auto 0%;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid rgb(190, 188, 188);
+  border-radius: 8px;
+  margin: 2%;
+  padding: 1rem;
+  background-color: white;
+}
+
+.flex-child:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.flex-child:hover .icon {
+  color: rgb(114, 22, 201);
+  pointer-events: none;
+}
+
+.flex-child p {
+  color: rgb(122, 122, 122);
+  margin: 0;
+  pointer-events: none;
+}
+
+.flex-child h3 {
+  margin: 10% 0 8%;
+  pointer-events: none;
+}
+
+.flex-child:focus {
+  border-color: rgb(114, 22, 201);
+}
+
+.buttonDiv {
+  width: 31%;
+  margin: 1% auto 0;
+  padding: 0;
+  text-align: center;
+}
+
+.buttonStyle {
+  padding: 0.5rem;
+  width: 96.5%;
+  margin: 1% 0.5% 6%;
+  border: 2px solid rgb(114, 22, 201);
+  border-radius: 4px;
+  background-color: rgb(132, 39, 219);
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid rgb(132, 39, 219);
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0% 0 6%;
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 760px) {
+  .buttonStyle {
+    width: 100%;
+    font-size: 90%;
+    padding: 0.4rem;
+  }
+
+  .buttonDiv {
+    width: 35%;
+    margin: 1% auto 0;
+    padding: 0;
+  }
+
+  button:disabled,
+  button:disabled:hover,
+  button:disabled:active {
+    width: 105%;
+  }
+  .flex-container {
+    display: flex;
+    width: 55%;
+    margin: 1% auto 0%;
+  }
+}

@@ -1,0 +1,20 @@
+.logo {
+  text-align: center;
+  margin-top: 1%;
+}
+.logo .icon {
+  color: rgb(114, 22, 201);
+  display: inline-block;
+}
+
+.logo h3 {
+  display: inline-block;
+  padding: 0.3rem;
+  font-weight: bold;
+}
+
+.logo2 {
+  width: 100%;
+  margin: 3% auto 1.5%;
+  color: rgb(114, 22, 201);
+}

@@ -1,0 +1,78 @@
+.form {
+  width: 31%;
+  margin: 1% auto 0;
+  padding: 0;
+}
+
+.form input {
+  display: block;
+  padding: 0.5rem;
+  width: 95%;
+  margin: 2% 0% 5%;
+  border: 2px solid rgb(190, 188, 188);
+  border-radius: 4px;
+  
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form .invalid input {
+  border: 2px solid salmon;
+}
+
+.buttonDiv {
+  text-align: center;
+  width: 32%;
+  margin: auto;
+}
+
+.buttonStyle {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 0 6%;
+  border: 2px solid rgb(114, 22, 201);
+  border-radius: 4px;
+  background-color: rgb(114, 22, 201);
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(132, 39, 219);
+  border: 2px solid rgb(132, 39, 219);
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0% 0 6%;
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 760px) {
+  .buttonStyle {
+    width: 105%;
+    font-size: 90%;
+    padding: 0.4rem;
+  }
+
+  .form label {
+    font-size: 90%;
+  }
+
+  button:disabled,
+  button:disabled:hover,
+  button:disabled:active {
+    width: 105%;
+  }
+}
